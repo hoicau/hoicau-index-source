@@ -35,6 +35,7 @@ export default {
   footer: {
     copyright: "版权所有",
     allRightsReserved: "保留所有权利。",
+    privacyPolicy: "隐私政策",
   },
   pages: {
     tagTitle: "标签",

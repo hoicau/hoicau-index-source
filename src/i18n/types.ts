@@ -33,6 +33,7 @@ export interface UIStrings {
   footer: {
     copyright: string;
     allRightsReserved: string;
+    privacyPolicy: string;
   };
   pages: {
     tagTitle: string;
