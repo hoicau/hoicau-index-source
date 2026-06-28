@@ -26,7 +26,6 @@ export default defineAstroPaperConfig({
       enabled: true,
       url: "https://github.com/hoicau/hoicau-index-source/edit/main/",
     },
-    search: "pagefind",
   },
   socials: [
     { name: "github", url: "https://github.com/hoicau" },

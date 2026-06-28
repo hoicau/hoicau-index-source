@@ -7,7 +7,6 @@ export default {
     tags: "标签",
     about: "关于",
     archives: "归档",
-    search: "搜索",
   },
   post: {
     publishedAt: "发布于",
@@ -49,17 +48,12 @@ export default {
 
     archivesTitle: "归档",
     archivesDesc: "我归档的所有文章。",
-
-    searchTitle: "搜索",
-    searchDesc: "搜索任意文章……",
   },
   a11y: {
     skipToContent: "跳到正文",
     openMenu: "打开菜单",
     closeMenu: "关闭菜单",
     toggleTheme: "切换主题",
-    searchPlaceholder: "搜索文章……",
-    noResults: "未找到结果",
     goToPreviousPage: "前往上一页",
     goToNextPage: "前往下一页",
   },

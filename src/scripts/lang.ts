@@ -40,7 +40,7 @@ function applyTranslations(lang: Lang): void {
     if (value !== undefined) el.textContent = value;
   });
 
-  // Swap attributes, e.g. data-i18n-attr="aria-label:a11y.toggleTheme;title:nav.search"
+  // Swap attributes, e.g. data-i18n-attr="aria-label:a11y.toggleTheme;title:nav.archives"
   document.querySelectorAll<HTMLElement>("[data-i18n-attr]").forEach(el => {
     const spec = el.dataset.i18nAttr;
     if (!spec) return;

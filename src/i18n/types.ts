@@ -5,7 +5,6 @@ export interface UIStrings {
     tags: string;
     about: string;
     archives: string;
-    search: string;
   };
   post: {
     publishedAt: string;
@@ -47,17 +46,12 @@ export interface UIStrings {
 
     archivesTitle: string;
     archivesDesc: string;
-
-    searchTitle: string;
-    searchDesc: string;
   };
   a11y: {
     skipToContent: string;
     openMenu: string;
     closeMenu: string;
     toggleTheme: string;
-    searchPlaceholder: string;
-    noResults: string;
     goToPreviousPage: string;
     goToNextPage: string;
   };

@@ -10,7 +10,7 @@ Built with [AstroPaper](https://github.com/satnaing/astro-paper) (Astro + Tailwi
 | :------------- | :------------------------------------------------ |
 | `pnpm install` | Install dependencies                              |
 | `pnpm dev`     | Start dev server at `localhost:4321`              |
-| `pnpm build`   | Type-check, build, and run Pagefind indexing      |
+| `pnpm build`   | Type-check and build the site                     |
 | `pnpm preview` | Preview the build locally                         |
 
 ---
@@ -39,7 +39,6 @@ Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README
 - [x] responsive (mobile ~ desktops)
 - [x] SEO-friendly
 - [x] light & dark mode
-- [x] static search ([Pagefind](https://pagefind.app/))
 - [x] draft posts & pagination
 - [x] sitemap & rss feed
 - [x] MDX support
@@ -66,7 +65,6 @@ Inside of AstroPaper, you'll see the following folders and files:
 ```bash
 /
 ├── public/
-│   ├── pagefind/          # auto-generated on build
 │   ├── favicon.svg
 │   └── default-og.jpg
 ├── src/
@@ -109,7 +107,6 @@ Documentation can be read in two formats\_ _markdown_ & _blog post_.
 **Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
 **Styling** - [TailwindCSS](https://tailwindcss.com/)  
 **UI/UX** - [Figma Design File](https://www.figma.com/community/file/1356898632249991861)  
-**Static Search** - [Pagefind](https://pagefind.app/)  
 **Icons** - [Tablers](https://tabler-icons.io/)  
 **Code Formatting** - [Prettier](https://prettier.io/)  
 **Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
@@ -168,7 +165,7 @@ All commands are run from the root of the project, from a terminal:
 | :--------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `pnpm install`   | Installs dependencies                                                                                                            |
 | `pnpm dev`       | Starts local dev server at `localhost:4321`                                                                                      |
-| `pnpm build`     | Type-checks, builds the site, runs Pagefind indexing, and copies the index to `public/pagefind/`                                 |
+| `pnpm build`     | Type-checks and builds the site                                                                                                  |
 | `pnpm preview`   | Preview your build locally, before deploying                                                                                     |
 | `pnpm sync`      | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
 | `pnpm astro ...` | Run CLI commands like `astro add`, `astro check`                                                                                 |
