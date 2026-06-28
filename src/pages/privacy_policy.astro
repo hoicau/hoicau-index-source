@@ -1,0 +1,33 @@
+---
+import { getEntry, render } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+const privacy = await getEntry("pages", "privacy_policy");
+
+if (!privacy) {
+  throw new Error(
+    "Missing content entry: `privacy_policy.md` or `privacy_policy.mdx` in `src/content/pages/`"
+  );
+}
+
+const { Content } = await render(privacy);
+---
+
+<Layout
+  title={`${privacy.data.title} | ${config.site.title}`}
+  description={privacy.data.description}
+  ogImage={privacy.data.ogImage}
+  canonicalURL={privacy.data.canonicalURL}
+>
+  <Header />
+
+  <Main pageTitle={privacy.data.title} class="app-prose">
+    <Content />
+  </Main>
+
+  <Footer />
+</Layout>
