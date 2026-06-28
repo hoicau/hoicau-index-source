@@ -5,7 +5,7 @@ description: "A bit about me and this blog."
 
 你好，我是**澈海秋光**（拼音：chè hǎi qiū guāng，粤拼：cit3 hoi2 cau1 gwong1）。
 
-这里是我的 Blog，用来记笔记、写作和分享项目。
+这是我的 Blog，用来记笔记、写作和分享项目。
 
 ----
 
