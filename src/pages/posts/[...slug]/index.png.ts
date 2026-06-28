@@ -4,6 +4,7 @@ import { fontData, experimental_getFontFileURL } from "astro:assets";
 import satori from "satori";
 import sharp from "sharp";
 import { getFontPathByWeight } from "@/utils/getFontPathByWeight";
+import { getCJKFont } from "@/utils/getCJKFont";
 import { getPostSlug } from "@/utils/getPostPaths";
 import config from "@/config";
 
@@ -43,6 +44,22 @@ export const GET: APIRoute = async ({ props, url }) => {
       res.arrayBuffer()
     ),
   ]);
+
+  const cjkText = `${props.data.title}${props.data.author}${config.site.title}`;
+  const [cjkRegular, cjkBold] = await Promise.all([
+    getCJKFont(cjkText, 400),
+    getCJKFont(cjkText, 700),
+  ]);
+  const cjkFonts: {
+    name: string;
+    data: ArrayBuffer;
+    weight: 400 | 700;
+    style: "normal";
+  }[] = [];
+  if (cjkRegular)
+    cjkFonts.push({ name: "Noto Sans SC", data: cjkRegular, weight: 400, style: "normal" });
+  if (cjkBold)
+    cjkFonts.push({ name: "Noto Sans SC", data: cjkBold, weight: 700, style: "normal" });
 
   const svg = await satori(
     {
@@ -184,6 +201,7 @@ export const GET: APIRoute = async ({ props, url }) => {
           weight: 700,
           style: "normal",
         },
+        ...cjkFonts,
       ],
     }
   );

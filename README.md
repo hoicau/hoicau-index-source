@@ -1,3 +1,23 @@
+# 澈海秋光
+
+Personal site of **澈海秋光** — notes, writing and projects.
+
+Built with [AstroPaper](https://github.com/satnaing/astro-paper) (Astro + Tailwind CSS).
+
+## Commands
+
+| Command        | Action                                            |
+| :------------- | :------------------------------------------------ |
+| `pnpm install` | Install dependencies                              |
+| `pnpm dev`     | Start dev server at `localhost:4321`              |
+| `pnpm build`   | Type-check, build, and run Pagefind indexing      |
+| `pnpm preview` | Preview the build locally                         |
+
+---
+
+<details>
+<summary>Original AstroPaper theme README</summary>
+
 # AstroPaper 📄
 
 ![AstroPaper](public/default-og.jpg)
@@ -164,3 +184,5 @@ Licensed under the MIT License, Copyright © 2026
 ---
 
 Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+
+</details>
